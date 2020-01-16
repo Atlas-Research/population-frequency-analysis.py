@@ -6,7 +6,7 @@ def make_avg_pm10_dictionary() -> object:  #This intention used to specify annot
 
     with open('', 'r') as f:
         parser = csv.DictReader(f, dialect='excel-tab')
-        who_air = {}
+                 = {}
 
         for row in parser:
             co = row['Country']
@@ -16,7 +16,7 @@ def make_avg_pm10_dictionary() -> object:  #This intention used to specify annot
 
                 [co].append(row["PM10"])
 
-        for co, pm10s in who_air.items():
+        for co, pm10s in .items():
             row = len(co)
 
             for i in pm10s:
